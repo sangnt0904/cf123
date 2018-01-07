@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="coffeebusiness2DataSet" targetNamespace="http://tempuri.org/coffeebusiness2DataSet.xsd" xmlns:mstns="http://tempuri.org/coffeebusiness2DataSet.xsd" xmlns="http://tempuri.org/coffeebusiness2DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="coffeebusiness2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="coffeebusiness2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.cf123.Properties.Settings.GlobalReference.Default.coffeebusiness2ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="banTableAdapter" GeneratorDataComponentClassName="banTableAdapter" Name="ban" UserDataComponentName="banTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="coffeebusiness2ConnectionString (Settings)" DbObjectName="coffeebusiness2.ban" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `STT_KHU_VUC`, `STT_BAN` FROM `ban`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="chi_tiet_hoa_don_ban_hangTableAdapter" GeneratorDataComponentClassName="chi_tiet_hoa_don_ban_hangTableAdapter" Name="chi_tiet_hoa_don_ban_hang" UserDataComponentName="chi_tiet_hoa_don_ban_hangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="coffeebusiness2ConnectionString (Settings)" DbObjectName="coffeebusiness2.chi_tiet_hoa_don_ban_hang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `THOI_GIAN_THAO_TAC_MILI_GIAY`, `MA_HOA_DON_BAN_HANG`, `NGAY_GIO_THEM_SAN_PHAM_BAN`, `MA_SAN_PHAM`, `TEN_SAN_PHAM_BAN`, `SO_LUONG_SAN_PHAM_BAN`, `DON_GIA_SAN_PHAM_BAN`, `THANH_TIEN_HOA_DON` FROM `chi_tiet_hoa_don_ban_hang`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="hoa_don_ban_hangTableAdapter" GeneratorDataComponentClassName="hoa_don_ban_hangTableAdapter" Name="hoa_don_ban_hang" UserDataComponentName="hoa_don_ban_hangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="coffeebusiness2ConnectionString (Settings)" DbObjectName="coffeebusiness2.hoa_don_ban_hang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `MA_HOA_DON_BAN_HANG`, `STT_KHU_VUC`, `STT_BAN`, `NGAY_GIO_LAP_HOA_DON_BAN_HANG`, `TRANG_THAI` FROM `hoa_don_ban_hang`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="khu_vucTableAdapter" GeneratorDataComponentClassName="khu_vucTableAdapter" Name="khu_vuc" UserDataComponentName="khu_vucTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="coffeebusiness2ConnectionString (Settings)" DbObjectName="coffeebusiness2.khu_vuc" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `STT_KHU_VUC`, `TEN_KHU_VUC` FROM `khu_vuc`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="lich_su_hoa_don_ban_hangTableAdapter" GeneratorDataComponentClassName="lich_su_hoa_don_ban_hangTableAdapter" Name="lich_su_hoa_don_ban_hang" UserDataComponentName="lich_su_hoa_don_ban_hangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="coffeebusiness2ConnectionString (Settings)" DbObjectName="coffeebusiness2.lich_su_hoa_don_ban_hang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `MA_HOA_DON_BAN_HANG`, `STT_KHU_VUC`, `STT_BAN`, `NGAY_GIO_LICH_SU_HOA_DON_BAN_HANG`, `MO_TA_LICH_SU_HOA_DON_BAN_HANG` FROM `lich_su_hoa_don_ban_hang`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sanphamTableAdapter" GeneratorDataComponentClassName="sanphamTableAdapter" Name="sanpham" UserDataComponentName="sanphamTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="coffeebusiness2ConnectionString (Settings)" DbObjectName="coffeebusiness2.sanpham" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `MA_SAN_PHAM`, `TEN_SAN_PHAM`, `GIA_SAN_PHAM`, `GHI_CHU_SAN_PHAM`, `SO_LAN_SU_DUNG` FROM `sanpham`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="coffeebusiness2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="coffeebusiness2DataSet" msprop:Generator_UserDSName="coffeebusiness2DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ban" msprop:Generator_TableClassName="banDataTable" msprop:Generator_TableVarName="tableban" msprop:Generator_TablePropName="ban" msprop:Generator_RowDeletingName="banRowDeleting" msprop:Generator_RowChangingName="banRowChanging" msprop:Generator_RowEvHandlerName="banRowChangeEventHandler" msprop:Generator_RowDeletedName="banRowDeleted" msprop:Generator_UserTableName="ban" msprop:Generator_RowChangedName="banRowChanged" msprop:Generator_RowEvArgName="banRowChangeEvent" msprop:Generator_RowClassName="banRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="chi_tiet_hoa_don_ban_hang" msprop:Generator_TableClassName="chi_tiet_hoa_don_ban_hangDataTable" msprop:Generator_TableVarName="tablechi_tiet_hoa_don_ban_hang" msprop:Generator_TablePropName="chi_tiet_hoa_don_ban_hang" msprop:Generator_RowDeletingName="chi_tiet_hoa_don_ban_hangRowDeleting" msprop:Generator_RowChangingName="chi_tiet_hoa_don_ban_hangRowChanging" msprop:Generator_RowEvHandlerName="chi_tiet_hoa_don_ban_hangRowChangeEventHandler" msprop:Generator_RowDeletedName="chi_tiet_hoa_don_ban_hangRowDeleted" msprop:Generator_UserTableName="chi_tiet_hoa_don_ban_hang" msprop:Generator_RowChangedName="chi_tiet_hoa_don_ban_hangRowChanged" msprop:Generator_RowEvArgName="chi_tiet_hoa_don_ban_hangRowChangeEvent" msprop:Generator_RowClassName="chi_tiet_hoa_don_ban_hangRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="hoa_don_ban_hang" msprop:Generator_TableClassName="hoa_don_ban_hangDataTable" msprop:Generator_TableVarName="tablehoa_don_ban_hang" msprop:Generator_TablePropName="hoa_don_ban_hang" msprop:Generator_RowDeletingName="hoa_don_ban_hangRowDeleting" msprop:Generator_RowChangingName="hoa_don_ban_hangRowChanging" msprop:Generator_RowEvHandlerName="hoa_don_ban_hangRowChangeEventHandler" msprop:Generator_RowDeletedName="hoa_don_ban_hangRowDeleted" msprop:Generator_UserTableName="hoa_don_ban_hang" msprop:Generator_RowChangedName="hoa_don_ban_hangRowChanged" msprop:Generator_RowEvArgName="hoa_don_ban_hangRowChangeEvent" msprop:Generator_RowClassName="hoa_don_ban_hangRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="khu_vuc" msprop:Generator_TableClassName="khu_vucDataTable" msprop:Generator_TableVarName="tablekhu_vuc" msprop:Generator_TablePropName="khu_vuc" msprop:Generator_RowDeletingName="khu_vucRowDeleting" msprop:Generator_RowChangingName="khu_vucRowChanging" msprop:Generator_RowEvHandlerName="khu_vucRowChangeEventHandler" msprop:Generator_RowDeletedName="khu_vucRowDeleted" msprop:Generator_UserTableName="khu_vuc" msprop:Generator_RowChangedName="khu_vucRowChanged" msprop:Generator_RowEvArgName="khu_vucRowChangeEvent" msprop:Generator_RowClassName="khu_vucRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="lich_su_hoa_don_ban_hang" msprop:Generator_TableClassName="lich_su_hoa_don_ban_hangDataTable" msprop:Generator_TableVarName="tablelich_su_hoa_don_ban_hang" msprop:Generator_TablePropName="lich_su_hoa_don_ban_hang" msprop:Generator_RowDeletingName="lich_su_hoa_don_ban_hangRowDeleting" msprop:Generator_RowChangingName="lich_su_hoa_don_ban_hangRowChanging" msprop:Generator_RowEvHandlerName="lich_su_hoa_don_ban_hangRowChangeEventHandler" msprop:Generator_RowDeletedName="lich_su_hoa_don_ban_hangRowDeleted" msprop:Generator_UserTableName="lich_su_hoa_don_ban_hang" msprop:Generator_RowChangedName="lich_su_hoa_don_ban_hangRowChanged" msprop:Generator_RowEvArgName="lich_su_hoa_don_ban_hangRowChangeEvent" msprop:Generator_RowClassName="lich_su_hoa_don_ban_hangRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sanpham" msprop:Generator_TableClassName="sanphamDataTable" msprop:Generator_TableVarName="tablesanpham" msprop:Generator_TablePropName="sanpham" msprop:Generator_RowDeletingName="sanphamRowDeleting" msprop:Generator_RowChangingName="sanphamRowChanging" msprop:Generator_RowEvHandlerName="sanphamRowChangeEventHandler" msprop:Generator_RowDeletedName="sanphamRowDeleted" msprop:Generator_UserTableName="sanpham" msprop:Generator_RowChangedName="sanphamRowChanged" msprop:Generator_RowEvArgName="sanphamRowChangeEvent" msprop:Generator_RowClassName="sanphamRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
