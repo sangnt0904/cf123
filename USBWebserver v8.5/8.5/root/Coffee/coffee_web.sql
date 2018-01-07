@@ -1,6 +1,6 @@
 /*
 SQLyog Community v12.2.1 (64 bit)
-MySQL - 10.1.21-MariaDB : Database - coffeebusiness
+MySQL - 10.1.21-MariaDB : Database - coffeebusiness2
 *********************************************************************
 */
 
@@ -14,7 +14,7 @@ MySQL - 10.1.21-MariaDB : Database - coffeebusiness
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`coffeebusiness2` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-use coffeebusiness2;
+USE `coffeebusiness2`;
 
 /*Table structure for table `ban` */
 
@@ -302,6 +302,28 @@ CREATE TABLE `chi_tiet_hoa_don_ban_hang` (
 
 /*Data for the table `chi_tiet_hoa_don_ban_hang` */
 
+insert  into `chi_tiet_hoa_don_ban_hang`(`THOI_GIAN_THAO_TAC_MILI_GIAY`,`MA_HOA_DON_BAN_HANG`,`NGAY_GIO_THEM_SAN_PHAM_BAN`,`MA_SAN_PHAM`,`TEN_SAN_PHAM_BAN`,`SO_LUONG_SAN_PHAM_BAN`,`DON_GIA_SAN_PHAM_BAN`,`THANH_TIEN_HOA_DON`) values 
+('15152509391424','HD06_01_2018_22_02_18','2018-01-06 22:02:19','SP17','Cafe',1,7000,7000),
+('15152509406860','HD06_01_2018_22_02_18','2018-01-06 22:02:20','SP30','Fin',1,7000,7000),
+('15152509419411','HD06_01_2018_22_02_18','2018-01-06 22:02:21','SP72','Rau má',1,7000,7000),
+('15152509586368','HD06_01_2018_22_02_18','2018-01-06 22:02:38','SP17','Cafe',1,7000,7000),
+('15152509594475','HD06_01_2018_22_02_18','2018-01-06 22:02:39','SP67','Nước ngọt ',1,12000,12000),
+('15152557596257','HD06_01_2018_23_22_38','2018-01-06 23:22:39','SP107','Trà dâu',1,7000,7000),
+('15152557597920','HD06_01_2018_23_22_38','2018-01-06 23:22:39','SP107','Trà dâu',1,7000,7000),
+('15152557604165','HD06_01_2018_23_22_38','2018-01-06 23:22:40','SP50','Má sữa',1,12000,12000),
+('15152557615596','HD06_01_2018_23_22_38','2018-01-06 23:22:41','SP107','Trà dâu',1,7000,7000),
+('15152557621308','HD06_01_2018_23_22_38','2018-01-06 23:22:42','SP26','Chanh tươi',1,7000,7000),
+('15152557705104','HD06_01_2018_23_22_49','2018-01-06 23:22:50','SP26','Chanh tươi',1,7000,7000),
+('15152557706152','HD06_01_2018_23_22_49','2018-01-06 23:22:50','SP26','Chanh tươi',1,7000,7000),
+('15152557712177','HD06_01_2018_23_22_49','2018-01-06 23:22:51','SP93','Sữa tươi',1,12000,12000),
+('15152557716470','HD06_01_2018_23_22_49','2018-01-06 23:22:51','SP123','Yaourt tẩy',1,12000,12000),
+('14976940956530','HD17_06_2017_17_08_15','2017-06-17 17:08:15','SP17','Cafe',1,7000,7000),
+('14976947170518','HD17_06_2017_17_18_36','2017-06-17 17:18:37','SP17','Cafe',1,7000,7000),
+('14976962380858','HD17_06_2017_17_43_57','2017-06-17 17:43:58','SP17','Cafe1',1,7000,7000),
+('14976962381644','HD17_06_2017_17_43_57','2017-06-17 17:43:58','SP17','Cafe',1,7000,7000),
+('14976964986447','HD17_06_2017_17_48_18','2017-06-17 17:48:18','SP17','Cafe',1,7000,7000),
+('14976964992743','HD17_06_2017_17_48_18','2017-06-17 17:48:19','SP104','Thuốc hút',1,5000,5000);
+
 /*Table structure for table `hoa_don_ban_hang` */
 
 DROP TABLE IF EXISTS `hoa_don_ban_hang`;
@@ -318,6 +340,15 @@ CREATE TABLE `hoa_don_ban_hang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `hoa_don_ban_hang` */
+
+insert  into `hoa_don_ban_hang`(`MA_HOA_DON_BAN_HANG`,`STT_KHU_VUC`,`STT_BAN`,`NGAY_GIO_LAP_HOA_DON_BAN_HANG`,`TRANG_THAI`) values 
+('HD06_01_2018_22_02_18',1,5,'2018-01-06 22:02:18','DA_THANH_TOAN'),
+('HD06_01_2018_23_22_38',1,5,'2018-01-06 23:22:38','DA_BI_XOA'),
+('HD06_01_2018_23_22_49',1,5,'2018-01-06 23:22:49','MOI'),
+('HD17_06_2017_17_08_15',1,2,'2017-06-17 17:08:15','DA_BI_XOA'),
+('HD17_06_2017_17_18_36',1,9,'2017-06-17 17:18:36','DA_BI_XOA'),
+('HD17_06_2017_17_43_57',1,4,'2017-06-17 17:43:57','DA_THANH_TOAN'),
+('HD17_06_2017_17_48_18',1,9,'2017-06-17 17:48:18','DA_THANH_TOAN');
 
 /*Table structure for table `khu_vuc` */
 
@@ -356,6 +387,14 @@ CREATE TABLE `lich_su_hoa_don_ban_hang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `lich_su_hoa_don_ban_hang` */
+
+insert  into `lich_su_hoa_don_ban_hang`(`MA_HOA_DON_BAN_HANG`,`STT_KHU_VUC`,`STT_BAN`,`NGAY_GIO_LICH_SU_HOA_DON_BAN_HANG`,`MO_TA_LICH_SU_HOA_DON_BAN_HANG`) values 
+('HD06_01_2018_22_02_18',1,5,'2018-01-06 22:03:50','Đã thanh toán'),
+('HD06_01_2018_23_22_38',1,5,'2018-01-06 23:22:47','Đã bị xóa!'),
+('HD17_06_2017_17_08_15',1,2,'2017-06-17 17:08:19','Đã bị xóa!'),
+('HD17_06_2017_17_18_36',1,9,'2017-06-17 17:18:40','Đã bị xóa!'),
+('HD17_06_2017_17_43_57',1,4,'2018-01-06 22:01:06','Đã thanh toán'),
+('HD17_06_2017_17_48_18',1,9,'2018-01-06 22:02:05','Đã thanh toán');
 
 /*Table structure for table `sanpham` */
 
@@ -505,6 +544,72 @@ insert  into `sanpham`(`MA_SAN_PHAM`,`TEN_SAN_PHAM`,`GIA_SAN_PHAM`,`GHI_CHU_SAN_
 ('SP98','Tàu hủ chiên xù',15000,'thcx',671),
 ('SP99','Sting sữa',17000,'sts',124);
 
+/* Procedure structure for procedure `delete_chi_tiet_hoa_don_ban_hang` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `delete_chi_tiet_hoa_don_ban_hang` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `delete_chi_tiet_hoa_don_ban_hang`(
+	in p_MA_HOA_DON_BAN_HANG varchar(50),
+	in p_THOI_GIAN_THAO_TAC_MILI_GIAY VARCHAR(50)
+    )
+BEGIN
+	delete from chi_tiet_hoa_don_ban_hang
+	where MA_HOA_DON_BAN_HANG = p_MA_HOA_DON_BAN_HANG
+		and `THOI_GIAN_THAO_TAC_MILI_GIAY` = p_THOI_GIAN_THAO_TAC_MILI_GIAY;
+	
+	SELECT ROW_COUNT() AS KET_QUA;
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `delete_sanpham` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `delete_sanpham` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `delete_sanpham`(
+	in p_MA_SAN_PHAM VARCHAR(50)
+    )
+BEGIN
+	delete from `sanpham`
+	WHERE `MA_SAN_PHAM` = p_MA_SAN_PHAM;	
+	
+	SELECT ROW_COUNT() AS KET_QUA;
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `insert_hoa_don_ban_hang` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `insert_hoa_don_ban_hang` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_hoa_don_ban_hang`(
+	IN p_STT_KHU_VUC int(11),
+	in p_STT_BAN int(11)
+    )
+BEGIN
+	INSERT INTO hoa_don_ban_hang(MA_HOA_DON_BAN_HANG, STT_KHU_VUC, STT_BAN, NGAY_GIO_LAP_HOA_DON_BAN_HANG, TRANG_THAI)
+		SELECT CONCAT('HD', DATE_FORMAT(NOW(),'%d_%m_%Y_%H_%i_%s')) as MA_HOA_DON_BAN_HANG,
+			p_STT_KHU_VUC as STT_KHU_VUC,
+			p_STT_BAN as STT_BAN,
+			now() as NGAY_GIO_LAP_HOA_DON_BAN_HANG,
+			'MOI' AS TRANG_THAI
+		FROM dual
+		WHERE NOT EXISTS (SELECT 1
+					FROM hoa_don_ban_hang
+					WHERE STT_KHU_VUC = p_STT_KHU_VUC
+						AND STT_BAN = p_STT_BAN
+						AND TRANG_THAI = 'MOI')
+		LIMIT 0, 1;
+			
+	SELECT ROW_COUNT() AS KET_QUA;
+	
+    END */$$
+DELIMITER ;
+
 /* Procedure structure for procedure `chuyen_hang_hoa_sang_hoa_don_khac` */
 
 /*!50003 DROP PROCEDURE IF EXISTS  `chuyen_hang_hoa_sang_hoa_don_khac` */;
@@ -593,22 +698,122 @@ BEGIN
     END */$$
 DELIMITER ;
 
-/* Procedure structure for procedure `delete_chi_tiet_hoa_don_ban_hang` */
+/* Procedure structure for procedure `insert_sanpham` */
 
-/*!50003 DROP PROCEDURE IF EXISTS  `delete_chi_tiet_hoa_don_ban_hang` */;
+/*!50003 DROP PROCEDURE IF EXISTS  `insert_sanpham` */;
 
 DELIMITER $$
 
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `delete_chi_tiet_hoa_don_ban_hang`(
-	in p_MA_HOA_DON_BAN_HANG varchar(50),
-	in p_THOI_GIAN_THAO_TAC_MILI_GIAY VARCHAR(50)
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_sanpham`(
+	in p_TEN_SAN_PHAM varchar(255),
+	in p_GIA_SAN_PHAM int(11),
+	in p_GHI_CHU_SAN_PHAM varchar(255)
     )
-BEGIN
-	delete from chi_tiet_hoa_don_ban_hang
-	where MA_HOA_DON_BAN_HANG = p_MA_HOA_DON_BAN_HANG
-		and `THOI_GIAN_THAO_TAC_MILI_GIAY` = p_THOI_GIAN_THAO_TAC_MILI_GIAY;
+BEGIn    
+	insert into sanpham(MA_SAN_PHAM, TEN_SAN_PHAM, GIA_SAN_PHAM, GHI_CHU_SAN_PHAM)
+	SELECT CONCAT('SP', IFNULL(MAX(MA_SAN_PHAM), 0) + 1) AS MA_SAN_PHAM,
+	p_TEN_SAN_PHAM AS TEN_SAN_PHAM, 
+	p_GIA_SAN_PHAM AS GIA_SAN_PHAM, 
+	p_GHI_CHU_SAN_PHAM AS GHI_CHU_SAN_PHAM
+	FROM sanpham;
 	
 	SELECT ROW_COUNT() AS KET_QUA;
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `select_danh_sach_hang_hoa` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hang_hoa` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hang_hoa`()
+BEGIN
+	/*
+	SELECT `STT_BAN`, `MA_HOA_DON_BAN_HANG`
+	FROM `hoa_don_ban_hang`;
+	*/
+	
+	select MA_SAN_PHAM, TEN_SAN_PHAM, GIA_SAN_PHAM, GHI_CHU_SAN_PHAM
+	from sanpham
+	order by SO_LAN_SU_DUNG desc; 
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `select_danh_sach_hang_hoa_1_ban` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hang_hoa_1_ban` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hang_hoa_1_ban`(
+	IN p_STT_KHU_VUC int(11),
+	IN p_STT_BAN INT(11)
+    )
+BEGIN
+	select cthd.THOI_GIAN_THAO_TAC_MILI_GIAY,
+		cthd.MA_HOA_DON_BAN_HANG, 
+		cthd.TEN_SAN_PHAM_BAN, 
+		cthd.SO_LUONG_SAN_PHAM_BAN, 
+		cthd.DON_GIA_SAN_PHAM_BAN,
+		cthd.THANH_TIEN_HOA_DON,
+		cthd.SO_LUONG_SAN_PHAM_BAN AS SO_LUONG_CHUYEN
+	from chi_tiet_hoa_don_ban_hang cthd, 
+		hoa_don_ban_hang hd
+	where hd.STT_KHU_VUC = p_STT_KHU_VUC
+		and hd.STT_BAN = p_STT_BAN
+		and cthd.MA_HOA_DON_BAN_HANG = hd.MA_HOA_DON_BAN_HANG
+		and hd.TRANG_THAI = 'MOI'
+	order by cthd.THOI_GIAN_THAO_TAC_MILI_GIAY;
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `select_danh_sach_hang_hoa_1_hoa_don` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hang_hoa_1_hoa_don` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hang_hoa_1_hoa_don`(
+	IN p_MA_HOA_DON_BAN_HANG varchar(50)
+    )
+BEGIN
+	select cthd.MA_HOA_DON_BAN_HANG, 
+		cthd.THOI_GIAN_THAO_TAC_MILI_GIAY, 
+		cthd.TEN_SAN_PHAM_BAN, 
+		cthd.SO_LUONG_SAN_PHAM_BAN, 
+		cthd.DON_GIA_SAN_PHAM_BAN,
+		cthd.THANH_TIEN_HOA_DON
+	from chi_tiet_hoa_don_ban_hang cthd, 
+		hoa_don_ban_hang hd
+	where cthd.MA_HOA_DON_BAN_HANG = p_MA_HOA_DON_BAN_HANG
+		and cthd.MA_HOA_DON_BAN_HANG = hd.MA_HOA_DON_BAN_HANG
+		and hd.TRANG_THAI = 'MOI'
+	order by cthd.THOI_GIAN_THAO_TAC_MILI_GIAY;
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `select_danh_sach_hang_hoa_1_hoa_don_lich_su` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hang_hoa_1_hoa_don_lich_su` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hang_hoa_1_hoa_don_lich_su`(
+	IN p_MA_HOA_DON_BAN_HANG VARCHAR(50)
+    )
+BEGIN
+	SELECT cthd.MA_HOA_DON_BAN_HANG, 
+		cthd.THOI_GIAN_THAO_TAC_MILI_GIAY, 
+		cthd.TEN_SAN_PHAM_BAN, 
+		cthd.SO_LUONG_SAN_PHAM_BAN, 
+		cthd.DON_GIA_SAN_PHAM_BAN,
+		cthd.THANH_TIEN_HOA_DON
+	FROM chi_tiet_hoa_don_ban_hang cthd, 
+		hoa_don_ban_hang hd
+	WHERE cthd.MA_HOA_DON_BAN_HANG = p_MA_HOA_DON_BAN_HANG
+		AND cthd.MA_HOA_DON_BAN_HANG = hd.MA_HOA_DON_BAN_HANG
+	ORDER BY cthd.THOI_GIAN_THAO_TAC_MILI_GIAY;
     END */$$
 DELIMITER ;
 
@@ -644,91 +849,6 @@ BEGIN
 	commit;
 	
 	SELECT V_ROW_COUNT AS KET_QUA;
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `delete_sanpham` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `delete_sanpham` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `delete_sanpham`(
-	in p_MA_SAN_PHAM VARCHAR(50)
-    )
-BEGIN
-	delete from `sanpham`
-	WHERE `MA_SAN_PHAM` = p_MA_SAN_PHAM;	
-	
-	SELECT ROW_COUNT() AS KET_QUA;
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `insert_hoa_don_ban_hang` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `insert_hoa_don_ban_hang` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_hoa_don_ban_hang`(
-	IN p_STT_KHU_VUC int(11),
-	in p_STT_BAN int(11)
-    )
-BEGIN
-	INSERT INTO hoa_don_ban_hang(MA_HOA_DON_BAN_HANG, STT_KHU_VUC, STT_BAN, NGAY_GIO_LAP_HOA_DON_BAN_HANG, TRANG_THAI)
-		SELECT CONCAT('HD', DATE_FORMAT(NOW(),'%d_%m_%Y_%H_%i_%s')) as MA_HOA_DON_BAN_HANG,
-			p_STT_KHU_VUC as STT_KHU_VUC,
-			p_STT_BAN as STT_BAN,
-			now() as NGAY_GIO_LAP_HOA_DON_BAN_HANG,
-			'MOI' AS TRANG_THAI
-		FROM dual
-		WHERE NOT EXISTS (SELECT 1
-					FROM hoa_don_ban_hang
-					WHERE STT_KHU_VUC = p_STT_KHU_VUC
-						AND STT_BAN = p_STT_BAN
-						AND TRANG_THAI = 'MOI')
-		LIMIT 0, 1;
-			
-	SELECT ROW_COUNT() AS KET_QUA;
-	
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `insert_sanpham` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `insert_sanpham` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_sanpham`(
-	in p_TEN_SAN_PHAM varchar(255),
-	in p_GIA_SAN_PHAM int(11),
-	in p_GHI_CHU_SAN_PHAM varchar(255)
-    )
-BEGIn    
-	insert into sanpham(MA_SAN_PHAM, TEN_SAN_PHAM, GIA_SAN_PHAM, GHI_CHU_SAN_PHAM)
-	values(CONCAT('HD', DATE_FORMAT(NOW(),'%d_%m_%Y_%H_%i_%s')), p_TEN_SAN_PHAM, p_GIA_SAN_PHAM, p_GHI_CHU_SAN_PHAM);
-	
-	SELECT ROW_COUNT() AS KET_QUA;
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `select_danh_sach_hang_hoa` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hang_hoa` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hang_hoa`()
-BEGIN
-	/*
-	SELECT `STT_BAN`, `MA_HOA_DON_BAN_HANG`
-	FROM `hoa_don_ban_hang`;
-	*/
-	
-	select MA_SAN_PHAM, TEN_SAN_PHAM, GIA_SAN_PHAM, GHI_CHU_SAN_PHAM
-	from sanpham
-	order by SO_LAN_SU_DUNG desc; 
     END */$$
 DELIMITER ;
 
@@ -845,6 +965,77 @@ BEGIN
     END */$$
 DELIMITER ;
 
+/* Procedure structure for procedure `select_danh_sach_hoa_don_1_khu_vuc` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hoa_don_1_khu_vuc` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hoa_don_1_khu_vuc`(
+	IN p_STT_KHU_VUC INT(11)
+    )
+BEGIN
+	select HD.STT_BAN, 
+		HD.MA_HOA_DON_BAN_HANG,
+		ifnull(sum(CTHD.THANH_TIEN_HOA_DON), 0) as TONG_TIEN
+	from hoa_don_ban_hang HD left join chi_tiet_hoa_don_ban_hang CTHD
+		on HD.MA_HOA_DON_BAN_HANG = CTHD.MA_HOA_DON_BAN_HANG		
+	where HD.STT_KHU_VUC =  p_STT_KHU_VUC
+		and HD.TRANG_THAI = 'MOI'
+	group by HD.MA_HOA_DON_BAN_HANG;
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `update_chi_tiet_hoa_don_ban_hang` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `update_chi_tiet_hoa_don_ban_hang` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `update_chi_tiet_hoa_don_ban_hang`(
+	in p_MA_HOA_DON_BAN_HANG varchar(50),
+	IN p_THOI_GIAN_THAO_TAC_MILI_GIAY VARCHAR(50),
+	in p_TEN_SAN_PHAM_BAN varchar(255),
+	in p_SO_LUONG_SAN_PHAM_BAN float,
+	in p_DON_GIA_SAN_PHAM_BAN int(11),
+	IN p_THANH_TIEN_HOA_DON INT(11)
+    )
+BEGIN
+	update chi_tiet_hoa_don_ban_hang
+	set TEN_SAN_PHAM_BAN = p_TEN_SAN_PHAM_BAN,		
+		THANH_TIEN_HOA_DON = case when (SO_LUONG_SAN_PHAM_BAN * DON_GIA_SAN_PHAM_BAN = THANH_TIEN_HOA_DON and THANH_TIEN_HOA_DON = p_THANH_TIEN_HOA_DON) then p_SO_LUONG_SAN_PHAM_BAN * p_DON_GIA_SAN_PHAM_BAN else  p_THANH_TIEN_HOA_DON end,
+		SO_LUONG_SAN_PHAM_BAN = p_SO_LUONG_SAN_PHAM_BAN,
+		DON_GIA_SAN_PHAM_BAN = p_DON_GIA_SAN_PHAM_BAN
+	where MA_HOA_DON_BAN_HANG = p_MA_HOA_DON_BAN_HANG
+		and THOI_GIAN_THAO_TAC_MILI_GIAY = p_THOI_GIAN_THAO_TAC_MILI_GIAY;
+	
+	SELECT ROW_COUNT() AS KET_QUA;
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `update_sanpham` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `update_sanpham` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `update_sanpham`(
+	in p_MA_SAN_PHAM VARCHAR(50),
+	IN p_TEN_SAN_PHAM VARCHAR(255),
+	IN p_GIA_SAN_PHAM INT(11),
+	IN p_GHI_CHU_SAN_PHAM VARCHAR(255)
+    )
+BEGIN
+	UPDATE `sanpham`
+	SET `TEN_SAN_PHAM` = p_TEN_SAN_PHAM,
+		`GIA_SAN_PHAM` = p_GIA_SAN_PHAM,
+		`GHI_CHU_SAN_PHAM` = p_GHI_CHU_SAN_PHAM
+	WHERE `MA_SAN_PHAM` = p_MA_SAN_PHAM;	
+	
+	SELECT ROW_COUNT() AS KET_QUA;
+    END */$$
+DELIMITER ;
+
 /* Procedure structure for procedure `select_danh_sach_ban_da_thanh_toan_gan_day_1_khu_vuc` */
 
 /*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_ban_da_thanh_toan_gan_day_1_khu_vuc` */;
@@ -872,104 +1063,6 @@ BEGIN
 						where `STT_KHU_VUC` = p_STT_KHU_VUC
 							and `TRANG_THAI` = 'MOI')
 	GROUP BY HD.MA_HOA_DON_BAN_HANG;
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `select_danh_sach_hang_hoa_1_ban` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hang_hoa_1_ban` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hang_hoa_1_ban`(
-	IN p_STT_KHU_VUC int(11),
-	IN p_STT_BAN INT(11)
-    )
-BEGIN
-	select cthd.THOI_GIAN_THAO_TAC_MILI_GIAY,
-		cthd.MA_HOA_DON_BAN_HANG, 
-		cthd.TEN_SAN_PHAM_BAN, 
-		cthd.SO_LUONG_SAN_PHAM_BAN, 
-		cthd.DON_GIA_SAN_PHAM_BAN,
-		cthd.THANH_TIEN_HOA_DON,
-		cthd.SO_LUONG_SAN_PHAM_BAN AS SO_LUONG_CHUYEN
-	from chi_tiet_hoa_don_ban_hang cthd, 
-		hoa_don_ban_hang hd
-	where hd.STT_KHU_VUC = p_STT_KHU_VUC
-		and hd.STT_BAN = p_STT_BAN
-		and cthd.MA_HOA_DON_BAN_HANG = hd.MA_HOA_DON_BAN_HANG
-		and hd.TRANG_THAI = 'MOI'
-	order by cthd.THOI_GIAN_THAO_TAC_MILI_GIAY;
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `select_danh_sach_hang_hoa_1_hoa_don` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hang_hoa_1_hoa_don` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hang_hoa_1_hoa_don`(
-	IN p_MA_HOA_DON_BAN_HANG varchar(50)
-    )
-BEGIN
-	select cthd.MA_HOA_DON_BAN_HANG, 
-		cthd.THOI_GIAN_THAO_TAC_MILI_GIAY, 
-		cthd.TEN_SAN_PHAM_BAN, 
-		cthd.SO_LUONG_SAN_PHAM_BAN, 
-		cthd.DON_GIA_SAN_PHAM_BAN,
-		cthd.THANH_TIEN_HOA_DON
-	from chi_tiet_hoa_don_ban_hang cthd, 
-		hoa_don_ban_hang hd
-	where cthd.MA_HOA_DON_BAN_HANG = p_MA_HOA_DON_BAN_HANG
-		and cthd.MA_HOA_DON_BAN_HANG = hd.MA_HOA_DON_BAN_HANG
-		and hd.TRANG_THAI = 'MOI'
-	order by cthd.THOI_GIAN_THAO_TAC_MILI_GIAY;
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `select_danh_sach_hang_hoa_1_hoa_don_lich_su` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hang_hoa_1_hoa_don_lich_su` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hang_hoa_1_hoa_don_lich_su`(
-	IN p_MA_HOA_DON_BAN_HANG VARCHAR(50)
-    )
-BEGIN
-	SELECT cthd.MA_HOA_DON_BAN_HANG, 
-		cthd.THOI_GIAN_THAO_TAC_MILI_GIAY, 
-		cthd.TEN_SAN_PHAM_BAN, 
-		cthd.SO_LUONG_SAN_PHAM_BAN, 
-		cthd.DON_GIA_SAN_PHAM_BAN,
-		cthd.THANH_TIEN_HOA_DON
-	FROM chi_tiet_hoa_don_ban_hang cthd, 
-		hoa_don_ban_hang hd
-	WHERE cthd.MA_HOA_DON_BAN_HANG = p_MA_HOA_DON_BAN_HANG
-		AND cthd.MA_HOA_DON_BAN_HANG = hd.MA_HOA_DON_BAN_HANG
-	ORDER BY cthd.THOI_GIAN_THAO_TAC_MILI_GIAY;
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `select_danh_sach_hoa_don_1_khu_vuc` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `select_danh_sach_hoa_don_1_khu_vuc` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `select_danh_sach_hoa_don_1_khu_vuc`(
-	IN p_STT_KHU_VUC INT(11)
-    )
-BEGIN
-	select HD.STT_BAN, 
-		HD.MA_HOA_DON_BAN_HANG,
-		ifnull(sum(CTHD.THANH_TIEN_HOA_DON), 0) as TONG_TIEN
-	from hoa_don_ban_hang HD left join chi_tiet_hoa_don_ban_hang CTHD
-		on HD.MA_HOA_DON_BAN_HANG = CTHD.MA_HOA_DON_BAN_HANG		
-	where HD.STT_KHU_VUC =  p_STT_KHU_VUC
-		and HD.TRANG_THAI = 'MOI'
-	group by HD.MA_HOA_DON_BAN_HANG;
     END */$$
 DELIMITER ;
 
@@ -1110,29 +1203,6 @@ BEGIN
     END */$$
 DELIMITER ;
 
-/* Procedure structure for procedure `update_sanpham` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `update_sanpham` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `update_sanpham`(
-	in p_MA_SAN_PHAM VARCHAR(50),
-	IN p_TEN_SAN_PHAM VARCHAR(255),
-	IN p_GIA_SAN_PHAM INT(11),
-	IN p_GHI_CHU_SAN_PHAM VARCHAR(255)
-    )
-BEGIN
-	UPDATE `sanpham`
-	SET `TEN_SAN_PHAM` = p_TEN_SAN_PHAM,
-		`GIA_SAN_PHAM` = p_GIA_SAN_PHAM,
-		`GHI_CHU_SAN_PHAM` = p_GHI_CHU_SAN_PHAM
-	WHERE `MA_SAN_PHAM` = p_MA_SAN_PHAM;	
-	
-	SELECT ROW_COUNT() AS KET_QUA;
-    END */$$
-DELIMITER ;
-
 /* Procedure structure for procedure `thong_ke_danh_sach_san_pham_ban_theo_ngay` */
 
 /*!50003 DROP PROCEDURE IF EXISTS  `thong_ke_danh_sach_san_pham_ban_theo_ngay` */;
@@ -1190,33 +1260,6 @@ BEGIN
 		AND HD.MA_HOA_DON_BAN_HANG = LS.MA_HOA_DON_BAN_HANG
 	GROUP BY LS.MA_HOA_DON_BAN_HANG, LS.NGAY_GIO_LICH_SU_HOA_DON_BAN_HANG
 	order by LS.NGAY_GIO_LICH_SU_HOA_DON_BAN_HANG DESC;
-    END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `update_chi_tiet_hoa_don_ban_hang` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `update_chi_tiet_hoa_don_ban_hang` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `update_chi_tiet_hoa_don_ban_hang`(
-	in p_MA_HOA_DON_BAN_HANG varchar(50),
-	IN p_THOI_GIAN_THAO_TAC_MILI_GIAY VARCHAR(50),
-	in p_TEN_SAN_PHAM_BAN varchar(255),
-	in p_SO_LUONG_SAN_PHAM_BAN float,
-	in p_DON_GIA_SAN_PHAM_BAN int(11),
-	IN p_THANH_TIEN_HOA_DON INT(11)
-    )
-BEGIN
-	update chi_tiet_hoa_don_ban_hang
-	set TEN_SAN_PHAM_BAN = p_TEN_SAN_PHAM_BAN,		
-		THANH_TIEN_HOA_DON = case when (SO_LUONG_SAN_PHAM_BAN * DON_GIA_SAN_PHAM_BAN = THANH_TIEN_HOA_DON and THANH_TIEN_HOA_DON = p_THANH_TIEN_HOA_DON) then p_SO_LUONG_SAN_PHAM_BAN * p_DON_GIA_SAN_PHAM_BAN else  p_THANH_TIEN_HOA_DON end,
-		SO_LUONG_SAN_PHAM_BAN = p_SO_LUONG_SAN_PHAM_BAN,
-		DON_GIA_SAN_PHAM_BAN = p_DON_GIA_SAN_PHAM_BAN
-	where MA_HOA_DON_BAN_HANG = p_MA_HOA_DON_BAN_HANG
-		and THOI_GIAN_THAO_TAC_MILI_GIAY = p_THOI_GIAN_THAO_TAC_MILI_GIAY;
-	
-	SELECT ROW_COUNT() AS KET_QUA;
     END */$$
 DELIMITER ;
 
