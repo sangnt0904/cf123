@@ -1,0 +1,7 @@
+TYPE=TRIGGERS
+triggers='CREATE DEFINER=`root`@`localhost` TRIGGER after_insert_chi_tiet_phieu_xuat AFTER INSERT ON chi_tiet_phieu_xuat \n    FOR EACH ROW \nBEGIN\n	update chi_tiet_ton_kho\n	set SO_LUONG_TON_KHO = SO_LUONG_TON_KHO - new.SO_LUONG_XUAT\n	where MA_PHIEU_NHAP = new.MA_PHIEU_NHAP\n		and MA_HANG_HOA = new.MA_HANG_HOA\n		and STT_CHI_TIET_PHIEU_NHAP = new.STT_CHI_TIET_PHIEU_NHAP;\n		\n	delete from chi_tiet_ton_kho\n	where SO_LUONG_TON_KHO = 0;\n			\n	INSERT INTO chi_tiet_xnt_hien_tai(MA_KHO_HANG, XNTHT_NGAY, MA_PHIEU_NHAP, MA_HANG_HOA, STT_CHI_TIET_PHIEU_NHAP, XNTHT_STT, XNTHT_SO_LUONG_TON, XNTHT_SO_LUONG_NHAP, XNTHT_SO_LUONG_XUAT)\n		SELECT MA_KHO_HANG,\n			DATE(THOI_GIAN_TAO_PHIEU_NHAP) AS XNTHT_NGAY,\n			MA_PHIEU_NHAP,\n			new.MA_HANG_HOA,\n			new.STT_CHI_TIET_PHIEU_NHAP,\n			(SELECT IFNULL(MAX(XNTHT_STT), 0) + 1 FROM chi_tiet_xnt_hien_tai WHERE MA_KHO_HANG = pn.MA_KHO_HANG AND XNTHT_NGAY = DATE(THOI_GIAN_TAO_PHIEU_NHAP)) AS XNTHT_STT,\n			0 AS XNTHT_SO_LUONG_TON, \n			0 AS XNTHT_SO_LUONG_NHAP,\n			new.SO_LUONG_XUAT AS XNTHT_SO_LUONG_XUAT \n		FROM phieu_nhap pn,\n			phieu_xuat px\n		WHERE MA_PHIEU_NHAP = new.MA_PHIEU_NHAP\n			and px.MA_PHIEU_NHAP = pn.MA_PHIEU_NHAP;\nEND'
+sql_modes=0
+definers='root@localhost'
+client_cs_names='utf8'
+connection_cl_names='utf8_general_ci'
+db_cl_names='utf8_general_ci'
