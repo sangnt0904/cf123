@@ -7,3 +7,6 @@ Version: '5.5.20'  socket: ''  port: 3307  MySQL Community Server (GPL)
 180108 22:40:35 [Note] Event Scheduler: Loaded 0 events
 180108 22:40:35 [Note] D:\Coffee_2018\cf123\USBWebserver v8.5\8.5/mysql/bin/mysqld_usbwv8.exe: ready for connections.
 Version: '5.5.20'  socket: ''  port: 3307  MySQL Community Server (GPL)
+180112 10:23:48 [Note] Event Scheduler: Loaded 0 events
+180112 10:23:48 [Note] E:\cf123\USBWebserver v8.5\8.5/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.5.20'  socket: ''  port: 3307  MySQL Community Server (GPL)
